@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding: 0 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#game {
+  background: url(/mario.gif);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+
+  margin: 150px auto 60px;
+}
+#character {
+  width: 100px;
+  height: 72px;
+  position: relative;
+  top: 420px;
+  left: 550px;
+}
+.pika {
+  width: 100px;
+}
+.chiko {
+  width: 140px;
+}
+.animate {
+  animation: jump 500ms;
+}
+
+#block {
+  width: 140px;
+  height: 80px;
+  position: relative;
+  top: 340px;
+  left: 90%;
+  animation: block 2.5s infinite linear;
+}
+@keyframes block {
+  0% {
+    left: 90%;
+  }
+  100% {
+    left: -40px;
+  }
+}
+@keyframes jump {
+  0% {
+    top: 420px;
+  }
+  30% {
+    top: 350px;
+  }
+  70% {
+    top: 350px;
+  }
+  100% {
+    top: 420px;
+  }
+}
+a {
+  background: #ff5361;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 22px;
+  cursor: pointer;
+  display: block;
+  text-transform: uppercase;
+}
+h1 {
+  margin: 20px;
+  color: #ff5361;
+}
+p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+span {
+  font-size: 20px;
+  font-weight: 700;
+}
